@@ -19,7 +19,7 @@ app.use(routes);
 // Connect to the Mongo DB
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/google-reading-list",
+  "'mongodb://google:4563SDFGsdfsgsdf@test-shard-00-00.iffsj.mongodb.net:27017,test-shard-00-01.iffsj.mongodb.net:27017,test-shard-00-02.iffsj.mongodb.net:27017/google?ssl=true&replicaSet=atlas-pl2ua8-shard-0&authSource=admin&retryWrites=true&w=majority'",
    {
     useNewUrlParser: true,
     useUnifiedTopology: true,
