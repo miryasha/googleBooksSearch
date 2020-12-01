@@ -19,7 +19,7 @@ export default {
   },
 
   googleSearch: function(bookTitle, author) {
-    return axios.get (`https://www.googleapis.com/books/v1/volumes?q=${bookTitle}+author:${author}&key=${process.env.REACT_APP_SECRET_API_KEY}`)
+    return axios.get (`https://www.googleapis.com/books/v1/volumes?q=${bookTitle}+author:${author}`)
     .catch(err => {
       console.log(err);
     })
