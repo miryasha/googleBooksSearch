@@ -6,7 +6,7 @@ import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 
 class Books extends Component {
-  // Setting our component's initial state
+  // initial state
   state = {
     books: [],
     search: [],
@@ -14,12 +14,12 @@ class Books extends Component {
     author: "",
   };
 
-  // When the component mounts, load all books and save them to this.state.books
+  // this.state.books
   componentDidMount() {
     this.loadBooks();
   }
 
-  // Loads all books  and sets them to this.state.books
+  //  this.state.books
   loadBooks = () => {
     API.getBooks()
       .then(res =>
@@ -34,7 +34,7 @@ class Books extends Component {
       .catch(err => console.log(err));
   }
 
-  // Deletes a book from the database with a given id, then reloads books from the db
+
   deleteBook = id => {
     API.deleteBook(id)
       .then(res => this.loadBooks())
@@ -49,8 +49,6 @@ class Books extends Component {
     });
   };
 
-  // When the form is submitted, use the API.saveBook method to save the book data
-  // Then reload books from the database
   handleFormSubmit = event => {
     event.preventDefault();
     if (this.state.title || this.state.author) {
