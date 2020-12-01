@@ -22,5 +22,13 @@
   "dependencies": {
     "express": "^4.16.3",
     "if-env": "^1.0.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yasha6081/googleBooksSearch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yasha6081/googleBooksSearch/issues"
+  },
+  "homepage": "https://github.com/yasha6081/googleBooksSearch#readme"
 }
